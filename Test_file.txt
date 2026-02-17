@@ -1,2 +1,0 @@
-We are learning autmation with selenium
-Adding or editing the file
