@@ -65,47 +65,92 @@ if num in fib:
 else:
     print("The iven number is Not available in series:", num)
 print("--------------------------------------------------------------")
-'''
 
 # 9). Python program to check authentication with the given username and password.
+user_name = input("Enter User name: ")
+password = input("Enter password: ")
+Result = user_name == password
 
+if user_name == password:
+    print("Valid user id and password")
+else:
+    print("Invalid user id and password")
+print("--------------------------------------------------------------")
 
-10). Python program to validate user_id in the list of user_ids.
+# 10). Python program to validate user_id in the list of user_ids.
+id_list = [11,22,33,44,55,66,77,88,99,111]
+id = int(input("Enter the id: "))
+if id in id_list:
+    print("Valid id: ", id)
+else:
+    print("Invalid id: ", id)
+print("--------------------------------------------------------------")
 
-Solution
+# 11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
+var5 = int(input("Enter the number1: "))
 
+if var5%2 == 0:
+    print("Suare of the given value is: ", var5**2)
+elif var5%3 == 0:
+    print("Qube of the given value is: ", var5**3)
+else:
+    print("Not a valid number")
+print("--------------------------------------------------------------")
 
-11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
+# 12). Python program to describe the interview process.
+round1 = input("Enter the status of 1st round: ")
+round2 = input("Enter the status of 2nd round: ")
 
-Discover more
-Computer programming
-programming
-pandas
-python
-Pandas
-Python
-Solution
-12). Python program to describe the interview process.
+if round1 == "passed":
+    print("Congratulation you have cleared 1st round")
+    if round2 == "passed":
+        print("Congratulation you have cleared 2nd round")
+        print("You are placed")
+    elif round2 == "failed":
+        print("Oh 2nd round not cleared, Better luck next time")
+    else:
+        print("Not a valid answer")
+elif round1 == "failed":
+    print("Oh 1st round not cleared, Better luck next time")
+else:
+    print("Not a valid address")
+print("--------------------------------------------------------------")
+# 13). Python program to determine whether a given number is available in the list of numbers or not.
+list_1 = [1,2,3,4,5,6,7,9,10]
+list_2 = [11,22,33,44,55,66,77,88,99]
+num_1 = int(input("Enter the number: "))
+if num_1 in list_1:
+    print(f"{num_1} The number is available in the list_1")
+elif num_1 in list_2:
+    print(f"{num_1} The number is available in the list_2")
+else:
+    print(f"{num_1} The number is Not available in any of the list")
+print("--------------------------------------------------------------")
 
-Solution
-13). Python program to determine whether a given number is available in the list of numbers or not.
+# 14). Python program to find the largest number among three numbers.
+num_1 = int(input("Enter the 1st number: "))
+num_2 = int(input("Enter the 2nd number: "))
+num_3 = int(input("Enter the 3rd number: "))
+if num_1 > num_2 and num_1 > num_3:
+    print("1st number is the Greater")
+elif num_2 > num_1 and num_2 > num_3:
+    print("2nd number is the Greater")
+elif num_3 > num_1 and num_3 > num_2:
+    print("3rd number is the Greater")
+else:
+    print("No number is greater")
+print("--------------------------------------------------------------")
 
-Discover more
-Computer programming
-programming
-Python
-Pandas
-python
-pandas
-Solution
-14). Python program to find the largest number among three numbers.
-
-Solution
-15). Python program to check any person eligible to vote or not
-age > 18+ : eligible
-age < 18: not eligible
-
-Solution
+# 15). Python program to check any person eligible to vote or not
+age = int(input("Enter the age: "))
+if 100 >= age >= 18:
+    print("You are eligible for Vote")
+elif 100 >= age < 18:
+    print("You are Not eligible for Vote")
+else:
+    print("Invalid age")
+print("--------------------------------------------------------------")
+'''
 16). Python program to check whether any given number is a palindrome.
 Input: 121
 Output: palindrome
