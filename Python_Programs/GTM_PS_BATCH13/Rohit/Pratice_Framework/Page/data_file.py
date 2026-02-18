@@ -1,0 +1,10 @@
+Facebook_URL = "https://www.facebook.com/"
+
+First_Name = "Mahesh"
+Surname = "Yadhav"
+Day = "20"
+Month = "Jun"
+Year = "2018"
+Gender = "Male"
+Mobile_number = "7890994003"
+New_Password= "QWERT@123"
