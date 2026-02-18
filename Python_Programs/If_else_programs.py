@@ -1,4 +1,3 @@
-'''
 # 1). Python program to check given number is divided by 3 or not.
 var1 = int(input("Enter the number: "))
 if var1%3 == 0:
@@ -150,30 +149,41 @@ elif 100 >= age < 18:
 else:
     print("Invalid age")
 print("--------------------------------------------------------------")
-'''
-16). Python program to check whether any given number is a palindrome.
-Input: 121
-Output: palindrome
 
-Solution
-17). Python program to check if any given string is palindrome or not.
-Input: ‘jaj’
-output = palindrome
+# 16). Python program to check whether any given number is a palindrome.
+numb1 = input("Enter the palindrome number: ")
+if numb1 == numb1[::-1]:
+    print("Yes its a palindrome number:", numb1)
+else:
+    print("No its not a palindrome number:", numb1)
+print("--------------------------------------------------------------")
 
-Solution
-18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
-Input = Enter marks: 45
-Output = Pass
+# 17). Python program to check if any given string is palindrome or not.
 
-Solution
-19). Python program to check whether the given number is positive or not.
-Input = 20
-Output = True
+# 18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
+marks01 = int(input("Enter the marks: "))
+if 100 >= marks01 >= 35:
+    print("Student Passed")
+elif 100 >= marks01 < 35:
+    print("Student Failed")
+else:
+    print("Not valid number")
+print("--------------------------------------------------------------")
 
-Solution
-20). Python program to check whether the given number is negative or not.
-Input = -45
-Output = True
+# 19). Python program to check whether the given number is positive or not.
 
-Solution
-'''
+# 20). Python program to check whether the given number is negative or not.
+
+# 21). Python program to check whether the given number is positive or negative and even or odd.
+numb01 = int(input("Enter the number: "))
+if numb01 > 0:
+    #print("Its a positive number")
+    if numb01 % 2 == 0:
+        print("The given number is positive and even")
+    else:
+        print("The given number is positive and odd")
+else:
+    if numb01 % 2 == 0:
+        print("The given number is Negative and even")
+    else:
+        print("The given number is Negative and odd")
