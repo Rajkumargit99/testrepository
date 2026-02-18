@@ -6,18 +6,23 @@ for i in range(1500,2701):
         print(i,end=" ")
 print("------------------------------------------------------------------------------------------")
 
-2). Python Loops program to construct the following pattern, using a nested for loops.
-Output :
-*
-*  *
-*  *  *
-*  *  *  *
-*  *  *  *  *
-*  *  *  *
-*  *  *
-*  *
-*
-'''
+# 2). Python Loops program to construct the following pattern, using a nested for loops.
+
+# first loop iterate from 1 to 6
+for i in range(1, 6):
+    # inner loop iterate from 1 to value of i+1
+    for j in range(1,i+1):
+        # print * for each iteration of j
+        print("*", end=" ")
+    print()
+# this is second section will iterate
+# from 5 to 1 in decreasing order
+for i in range(5, 1,-1):
+    for j in range(1,i-1):
+        print("*", end=" ")
+    print()
+print("------------------------------------------------------------------------------------------")
+
 # 3). Python Loops program that will add the word from the user to the empty string using python.
 word = input("Enter the word: ")
 str_1 = ""
@@ -25,20 +30,28 @@ for i in range(len(word)):
     str_1 += word[i]   #str_1 = (str_1)+(word)
 print(str_1)
 print("------------------------------------------------------------------------------------------")
+
+# 4). Python Loops program to count the number of even and odd numbers from a series of numbers using python.
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14)
+even = 0
+odd = 0
+for b in numbers:
+    if b%2 == 0:
+        even += 1
+    else:
+        odd += 1
+print("Number of even numbers: ", even)
+print("Number of odd numbers: ", odd)
+print("------------------------------------------------------------------------------------------")
 '''
-4). Python Loops program to count the number of even and odd numbers from a series of numbers using python.
-Input : (1, 2, 3, 4, 5, 6, 7, 8, 9)
-Output :
-Number of even numbers: 4
-Number of odd numbers: 5
 
-Solution
-5). Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python.
+# 5). Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python.
 
-Solution
 Discover more
 NumPy
 pandas
+
+'''
 6). Write a program to get the Fibonacci series between 0 to 20 using python.
 Fibonacci Series : 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
 
