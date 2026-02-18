@@ -1,9 +1,11 @@
-
+'''
 # 1). Write a Python loops program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
-Input1:1500
-Input2:2700
 
-Solution
+for i in range(1500,2701):
+    if i%7 ==0 and i%5 == 0:
+        print(i,end=" ")
+print("------------------------------------------------------------------------------------------")
+
 2). Python Loops program to construct the following pattern, using a nested for loops.
 Output :
 *
@@ -15,13 +17,15 @@ Output :
 *  *  *
 *  *
 *
-
-Solution
-3). Python Loops program that will add the word from the user to the empty string using python.
-Input: “python”
-Output : “python”
-
-Solution
+'''
+# 3). Python Loops program that will add the word from the user to the empty string using python.
+word = input("Enter the word: ")
+str_1 = ""
+for i in range(len(word)):
+    str_1 += word[i]   #str_1 = (str_1)+(word)
+print(str_1)
+print("------------------------------------------------------------------------------------------")
+'''
 4). Python Loops program to count the number of even and odd numbers from a series of numbers using python.
 Input : (1, 2, 3, 4, 5, 6, 7, 8, 9)
 Output :
@@ -105,3 +109,4 @@ Solution
 20). Write a program to find the first and last digits of a number using python.
 
 Solution
+'''
