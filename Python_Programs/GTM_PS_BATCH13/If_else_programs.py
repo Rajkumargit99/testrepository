@@ -1,4 +1,4 @@
-
+'''
 # 1). Python program to check given number is divided by 3 or not.
 var1 = int(input("Enter the number: "))
 if var1%3 == 0:
@@ -188,3 +188,10 @@ else:
         print("The given number is Negative and even")
     else:
         print("The given number is Negative and odd")
+
+# One line statement if_else_program.
+var = int(input("Enter the number: "))
+result = "even" if var%2 == 0 else "odd"
+print("The give number is: ", result)
+
+'''

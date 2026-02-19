@@ -47,10 +47,6 @@ print("-------------------------------------------------------------------------
 
 # 5). Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python.
 
-Discover more
-NumPy
-pandas
-
 '''
 6). Write a program to get the Fibonacci series between 0 to 20 using python.
 Fibonacci Series : 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
@@ -122,4 +118,43 @@ Solution
 20). Write a program to find the first and last digits of a number using python.
 
 Solution
+
+# continue
+for i in range(10): # i = 0
+    if i == 3 or i == 5 or i == 7:
+        continue # police man
+    print(i)
+print("---------------------------------------------------------------")
+
+for i in range(20, 1, -1):
+    if i == 12:
+        break
+    print(i)
+
+# 41).  Python loops program to print the pattern T using Python Loops.
+for i in range(3):
+    for j in range(9):
+        print("*", end=" ")
+    print()
+for i in range(6):
+    for j in range(9):
+        if j>5 and j<9:
+            print("*", end=" ")
+        else:
+            print("", end=" ")
+    print()
+
+
+for row in range(0, 7):
+        for column in range(0, 7):
+            # here in first and last row we want to three *
+            if (row == 0 or row == 6) and (1 < column < 5) :
+                print("*", end=' ')
+            # here from 2 to 6 row, * will print on 1 and 5 index only.
+            elif (0 < row <= 5) and (column ==1 or column ==5):
+                print("*", end=' ')
+            else:
+                print(" ", end=' ')
+        print()
+        
 '''

@@ -1,4 +1,4 @@
-
+'''
 # 1). Python Program to add two integer values.
 
 aa = 10
@@ -30,18 +30,18 @@ print("Multiply value of c2:", c2)
 print("-"*50)
 
 #4). Python program to repeat a given string 5 times.
-'''Input :
+"""Input :
 str1 = “SQATools”
 Output :
-“SQAToolsSQAToolsSQAToolsSQAToolsSQATools” 
-'''
+“SQAToolsSQAToolsSQAToolsSQAToolsSQATools” """
+
 str1 = "SQATools"
 print("Result:", str1*5)
 print("-"*50)
 
 # 5). Python program to get the Average of given numbers.
-'''Formula: sum of all the number/ total number
-'''
+#Formula: sum of all the number/ total number
+
 a3 = 40
 b3 = 50
 c3 = 30
@@ -49,34 +49,34 @@ print("Average of given numbers:", (a3+b3+c3)/3)
 print("-"*50)
 
 '''# 6). Python program to get the median of given numbers.
-Note: all the numbers should be arranged in ascending order
+"""Note: all the numbers should be arranged in ascending order
 Formula : (n+1)/2
 n = Number of values
 Input : [45, 60, 61, 66, 70, 77, 80]
-Output:  66
+Output:  66"""
 '''
 print("-"*50)
 
 # 7). Python program to print the square and cube of a given number.
-'''Input :
+"""Input :
 num1 = 9
 Output :
 Square = 81
 Cube =   729
-'''
+"""
 G = 9
 print("Square of a give number 9 is:", G**2)
 print("Cube of a given number 9 is:", G**3)
 print("-"*50)
 
 #8). Python program to interchange values between variables.
-'''Input :
+"""Input :
 a = 10
 b = 20
 Output :
 a = 20
-b = 10
-'''
+b = 10"""
+
 a = 10
 b = 20
 a,b = b,a
@@ -84,11 +84,11 @@ print("interchange values a:", a)
 print("interchange values b:", b)
 print("-"*50)
 
-'''#9). Python program to solve this Pythagorous theorem.
+"""#9). Python program to solve this Pythagorous theorem.
 Theorem : (a2 + b2 = c2)
 
-Solution
-'''
+Solution"""
+
 print("-"*50)
 
 # 10). Python program to solve the given math formula.
@@ -135,3 +135,4 @@ print("-"*50)
 # Formula : area = a*a
 area = int(input("Enter the side of square:" ))
 print("Area of square:", area**2)
+'''
