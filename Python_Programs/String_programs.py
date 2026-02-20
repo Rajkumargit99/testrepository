@@ -53,7 +53,6 @@ print("Largest word: ", max(line, key=len))
 print("smallest word: ", min(line, key=len))
 print("---------------------------------------------------------------------------")
 '''
-
 # 8). Print most simultaneously repeated characters in the input string.
 
 print("---------------------------------------------------------------------------")
