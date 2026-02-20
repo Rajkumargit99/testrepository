@@ -157,4 +157,14 @@ for row in range(0, 7):
                 print(" ", end=' ')
         print()
         
+Print(--------------------------------------------------------------------------------)
+#Testing:
+for var in range(1,20):
+    print(var)
+
+var1 = ["raj", "Ravi", "kig"]
+print(var1)
+
+for v in var1:
+    print(v)
 '''
