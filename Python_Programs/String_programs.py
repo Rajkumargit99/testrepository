@@ -17,22 +17,43 @@ for word1 in list_1:
         print(temp1)
 print("the final out put:",temp1)
 print("---------------------------------------------------------------------------")
-'''
+
 # 3). Python string program to get a string made of 4 copies of the last two characters of a specified string (length must be at least 2).
-
+str_2 = "amplifier"
+print(str_2[-2:]*4)
 print("---------------------------------------------------------------------------")
+
 # 4). Python string program to reverse a string if it’s length is a multiple of 4.
-
+str_3 = "personal"
+p1 = len(str_3)
+if p1 % 4 == 0:
+    print(str_3[::-1])
+else:
+    print("n/a")
 print("---------------------------------------------------------------------------")
+
 # 5). Python string program to count occurrences of a substring in a string.
-
 print("---------------------------------------------------------------------------")
+
 # 6). Python string program to test whether a passed letter is a vowel or consonant.
+str_4 = "happy new year and hppy birthday"
+for vol in str_4:
+    if vol == "a" or vol == "e" or vol == "i" or vol == "o" or vol == "u":
+        print("vowel", vol)
+    else:
+        print("standard", vol)
 
 print("---------------------------------------------------------------------------")
+
 # 7). Find the longest and smallest word in the input string.
-
+str_5 = "how is the programing knowledge and how is the practice"
+line = str_5.split(" ")
+print(line)
+print("Largest word: ", max(line, key=len))
+print("smallest word: ", min(line, key=len))
 print("---------------------------------------------------------------------------")
+'''
+
 # 8). Print most simultaneously repeated characters in the input string.
 
 print("---------------------------------------------------------------------------")
