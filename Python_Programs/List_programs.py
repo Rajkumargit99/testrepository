@@ -1,4 +1,21 @@
-Python List Programs
+# Python List Programs
+list_1 = ["hari", "ravi", "raju", "kumar", "nag","raju", "kumar"]
+print(list_1)
+print(set(list_1))
+var = set(list_1)
+print(list(var))
+
+'''
+list = ["hari", "ravi", "raju", "kumar", "nag","raju", "kumar"]
+ans = []
+for name in list:
+    if name not in ans:
+        ans.append(name)
+    else:
+        continue
+print(ans)
+
+
 1). Python program to calculate the square of each number from the given list.
 
 Solution
@@ -96,4 +113,4 @@ Solution
 Solution
 26). Python program to get the max, min, and sum of the list using in-built functions.
 
-Solution
+Solution'''
