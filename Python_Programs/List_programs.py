@@ -45,8 +45,6 @@ for van_2 in list_6:
         result_2 = van_2
         print(result_2, end=" ")
 
-
-
 '''
 print("---------------------------------------------------------------------------------")
 4). Python program to find a product of all elements from a given list.
