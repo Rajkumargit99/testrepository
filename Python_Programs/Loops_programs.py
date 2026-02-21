@@ -43,31 +43,44 @@ for b in numbers:
 print("Number of even numbers: ", even)
 print("Number of odd numbers: ", odd)
 print("------------------------------------------------------------------------------------------")
-'''
 
 # 5). Write a program that prints all the numbers from 0 to 6 except 3 and 6 using python.
+for i_1 in range(0,11):
+    if i_1 != 3 and i_1 != 6:
+        print(i_1, end=" ")
+print("------------------------------------------------------------------------------------------")
 
-'''
-6). Write a program to get the Fibonacci series between 0 to 20 using python.
+# 6). Write a program to get the Fibonacci series between 0 to 20 using python.
 Fibonacci Series : 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
+print("------------------------------------------------------------------------------------------")
 
-Solution
-7). Write a program that iterates the integers from 1 to 30 using python. For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”.
-For numbers that are multiples of both three and five print “FizzBuzz”.
+# 7). Write a program that iterates the integers from 1 to 30 using python. For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”. For numbers that are multiples of both three and five print “FizzBuzz”.
+for i_2 in range(0,31):
+    if i_2 % 3 == 0 and i_2 % 5 == 0:
+        print("FizzBuzz")
+    elif i_2 % 3 == 0:
+        print("Fizz")
+    elif i_2 % 5 == 0:
+        print("Buzz")
+    else:
+        pass
+print("------------------------------------------------------------------------------------------")
 
-Solution
-8). Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
-Input : “SqaTOOlS”
-Output : “sqatools”
+#8). Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
 
-Solution
-9). Python loops program that accepts a string and calculates the number of digits and letters using python.
+str_2 = input("Enter the value: ")
+for var_2 in str_2:
+    print(var_2.lower(), end=" ")
+print("------------------------------------------------------------------------------------------")
+'''
+
+# 9). Python loops program that accepts a string and calculates the number of digits and letters using python.
 Input : “python1234”
 Output :
 Letters 6
 Digits 4
 
-Solution
+'''
 10). Python for loop program to print the alphabet pattern ‘O’ using python.
 Output:
   ***
