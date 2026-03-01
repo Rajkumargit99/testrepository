@@ -22,6 +22,5 @@ def write_excel_file(file_path, sheet_name, cell_name, cell_value):
     print(cell.value)
 
 write_excel_file("user_data.xlsx", "Sheet1", "b1","2021")
-write_excel_file("user_data.xlsx", "Sheet1", "b2","2022")
-write_excel_file("user_data.xlsx", "Sheet1", "b3","2023")
-write_excel_file("user_data.xlsx", "Sheet1", "b4","2024")
+for i in range(1,6):
+    write_excel_file("user_data.xlsx", "Sheet1", "b2","2022")
