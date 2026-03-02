@@ -21,3 +21,4 @@ for i in range(1,10):
     user_data = f"{fk.name_female()}, {fk.email()}, {fk.city()}\n"
     with open("user_details.txt", "a") as file:
         file.write(user_data)
+print("-----------------------------------------------------------------------")
