@@ -18,4 +18,4 @@ print(date_time_format)
 
 print("-----------")
 
-print("2 days ago: ", (current_date-timedelta(days = 2)).date())
+print("2 days ago: ", (current_date+timedelta(days=2)).date())
