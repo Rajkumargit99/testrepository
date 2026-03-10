@@ -57,8 +57,7 @@ class Son(Father):
 
     def son_hobies(hi, hello):
         for i in range(1,10):
-            a = 1
-            print("ans: ", i*a)
+            print("ans:", i, end=", ")
 
 sn = Son("Rajkumar", "SQE", "Mallesh", "House", "Subbaiah", "Kondagurla")
 sn.son_details()
