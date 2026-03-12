@@ -28,12 +28,12 @@ and this is the most usefull
 and content for the py files
 this is for example i am using this''')
 print("------------------------------------------------------------------------")
-def read_file_n_ltters(file_path, n_letters):
+def read_file_n_letters(file_path, n_letters):
     with open(file_path, "r") as lr_file:
         data = lr_file.read(n_letters)
         print(data)
 
-read_file_n_ltters("Module1.txt", 160)
+read_file_n_letters("Module1.txt", 160)
 print("------------------------------------------------------------------------")
 
 def read_file_n_lines(file_path, n_lines):
