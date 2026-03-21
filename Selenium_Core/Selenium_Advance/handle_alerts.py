@@ -11,13 +11,14 @@ driver.implicitly_wait(10)
 driver.get("https://automationbysqatools.blogspot.com/2020/08/alerts.html")
 alert = Alert(driver)
 
-def btnShowMsg_1():
+def btnShowMsg():
     driver.find_element(By.ID, "btnShowMsg").click()
     time.sleep(5)
     print("alert message", alert.text)
     alert.accept()
 
-btnShowMsg_1()
+
+#btnShowMsg()
 
 def handle_confirm_alert():
     driver.find_element(By.ID, "button").click()
