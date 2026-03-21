@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options as chrome_option
 from selenium.webdriver.firefox.options import Options as firefox_option
 from selenium.webdriver.edge.options import Options as edge_option
 
-browser = "edge"
+browser = "chrome"
 headless = False
 driver = None
 
