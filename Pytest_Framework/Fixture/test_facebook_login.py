@@ -12,6 +12,8 @@ class TestFacebook:
         self.driver.find_element(By.NAME, "pass").send_keys("user@1234")
         time.sleep(5)
         self.driver.find_element(By.NAME, "login").click()
+
+
     def test_dummy_booking(self):
         self.driver.get("https://sqatools.in/dummy-booking-website/")
         self.driver.find_element(By.NAME, "fromcity").send_keys("Mumbai")

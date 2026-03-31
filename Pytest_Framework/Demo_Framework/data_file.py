@@ -1,0 +1,6 @@
+website_url = "https://sqatools.in/dummy-booking-website/"
+
+from_city_name = "Mumbai"
+dest_city_name = "Pune"
+billing_name = "Rahul"
+billing_phone = 7799992255
