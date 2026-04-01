@@ -12,7 +12,7 @@ try:
     from app.config.constants import LOG_LEVEL, LOG_FORMAT
 except (ImportError, ModuleNotFoundError):
     # Fallback values when config modules are not available
-    Config = type('Config', (), {'LOGS_PATH': 'logs'})
+    Config = type('Config', (), {'LOGS_PATH': 'log'})
     LOG_LEVEL = 'INFO'
     LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
@@ -36,7 +36,7 @@ def get_logger(name: str) -> logging.Logger:
             
             logger.addHandler(console_handler)
             
-            # File handler (if logs directory exists)
+            # File handler (if log directory exists)
             logs_dir = Config.LOGS_PATH
             os.makedirs(logs_dir, exist_ok=True)
             

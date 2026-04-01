@@ -38,7 +38,7 @@ class Config:
     # Paths
     DATA_RAW_PATH = "app/data/raw_docs"
     DATA_PROCESSED_PATH = "app/data/processed"
-    LOGS_PATH = "logs"
+    LOGS_PATH = "log"
     
     # Debug
     DEBUG = os.getenv("DEBUG", "False").lower() == "true"
