@@ -23,6 +23,6 @@ class TestDummyBooking:
         time.sleep(1)
         self.dp.enter_billing_name(bill_name=billing_name)
         self.dp.enter_billing_phone(bill_phone=billing_phone)
-        time.sleep(4)
+        time.sleep(2)
 
 
