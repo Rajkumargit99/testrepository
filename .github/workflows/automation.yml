@@ -31,14 +31,10 @@ jobs:
           sudo apt-get install -y google-chrome-stable
           
 
-      - name: Run automation script Non-browser
+      - name: Run automation script
         run: |
           cd Pytest_Framework/Automation_Framework
           pip install -r requirements.txt
-          python -m pytest -v tests/prod/
+          python -m pytest -v ./tests/  --html=report.html --self-contained-html
 
-      - name: Run automation script with-browser
-        run: |
-          cd Pytest_Framework/Automation_Framework
-          pip install -r requirements.txt
-          python -m pytest -v ./tests/
+      
